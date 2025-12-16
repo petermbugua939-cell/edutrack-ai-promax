@@ -1,1 +1,50 @@
+services:
+  - type: web
+    name: edutrack-ai-pro
+    env: python
+    region: oregon  # or your preferred region
+    plan: free  # start with free, upgrade as needed
+    
+    # Build configuration
+    buildCommand: |
+      pip install --upgrade pip
+      pip install -r requirements.txt
+      python -c "from database import Base, engine; import models; Base.metadata.create_all(bind=engine)"
+    
+    # Start command
+    startCommand: uvicorn app:app --host 0.0.0.0 --port 10000
+    
+    # Health check
+    healthCheckPath: /api/health
+    
+    # Auto-deploy from Git
+    autoDeploy: true
+    branch: main
+    
+    # Environment variables
+    envVars:
+      - key: DATABASE_URL
+        sync: false  # Set this in Render dashboard with your PostgreSQL URL
+      - key: SECRET_KEY
+        generateValue: true
+      - key: ENVIRONMENT
+        value: production
+      - key: PYTHON_VERSION
+        value: 3.9.0
 
+  # PostgreSQL database (optional - add if you need managed database)
+  - type: postgres
+    name: edutrack-db
+    plan: free
+    ipAllowList: []  # Allow all IPs (or specify for security)
+    
+    # Database initialization
+    databaseName: edutrack
+    user: edutrack_user
+
+  # Redis for caching and WebSockets (optional)
+  - type: redis
+    name: edutrack-redis
+    plan: free
+    ipAllowList: []
+    maxmemoryPolicy: allkeys-lru
