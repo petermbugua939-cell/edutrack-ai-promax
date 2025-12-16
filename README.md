@@ -1,4 +1,4 @@
-# EduTrack AI Pro 🚀
+# EduTrack AI Promax 🚀
 
 **Advanced Educational Analytics Platform with AI-powered Insights**
 
