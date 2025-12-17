@@ -1,0 +1,436 @@
+# ========== PYTHON ==========
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+pip-log.txt
+pip-delete-this-directory.txt
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+.pytest_cache/
+.pytest_cache/v/cache/*
+.pytest_cache/lastfailed
+.pytest_cache/stepwise
+*.mo
+*.pot
+
+# ========== VIRTUAL ENVIRONMENTS ==========
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+pythonenv*
+
+# ========== ENVIRONMENT VARIABLES ==========
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env.*
+!.env.example
+
+# ========== IDE & EDITOR ==========
+# VS Code
+.vscode/
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+
+# PyCharm
+.idea/
+.idea/*
+!.idea/codeStyles/
+!.idea/inspectionProfiles/
+*.iws
+*.iml
+*.ipr
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb
+
+# Sublime Text
+*.sublime-workspace
+*.sublime-project
+
+# Vim
+*.swp
+*.swo
+*~
+
+# ========== OPERATING SYSTEM ==========
+# macOS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Windows
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msm
+*.msp
+
+# Linux
+*~
+
+# ========== DATABASES ==========
+# SQLite
+*.sqlite
+*.sqlite3
+*.db
+*.db-journal
+
+# PostgreSQL backup files
+*.dump
+*.backup
+*.sql.gz
+
+# ========== LOGS ==========
+*.log
+logs/
+log/
+*.logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# ========== TEMPORARY FILES ==========
+temp/
+tmp/
+*.tmp
+*.temp
+*.cache
+.cache/
+.cache/*
+!*.keep
+
+# ========== UPLOADED FILES ==========
+uploads/
+media/
+static/uploads/
+user_uploads/
+imports/
+
+# ========== ML/AI MODELS ==========
+models/*.pkl
+models/*.joblib
+models/*.h5
+models/*.keras
+models/*.pt
+models/*.pth
+models/*.onnx
+models/trained/
+models/checkpoints/
+*.weights
+*.index
+*.data-*
+
+# ========== VECTOR DATABASES ==========
+chroma/
+chromadb/
+vector_store/
+embeddings/
+faiss_index/
+
+# ========== CACHE ==========
+.cache/
+.mypy_cache/
+.dmypy.json
+dmypy.json
+.pyre/
+
+# ========== INSTANCE FOLDERS ==========
+instance/
+*.instance
+.flaskenv
+
+# ========== DOCUMENTATION ==========
+docs/_build/
+docs/_static/
+docs/_templates/
+site/
+_site/
+
+# ========== TEST & COVERAGE ==========
+htmlcov/
+.coverage
+.coverage.*
+cover/
+*.cover
+.hypothesis/
+.pytest_cache/
+.tox/
+.mypy_cache/
+.dmypy.json
+dmypy.json
+.pyre/
+.pytest_cache/
+test_results/
+*.xml
+*.junit
+*.coverage
+
+# ========== PACKAGING ==========
+*.egg
+*.egg-info/
+dist/
+build/
+eggs/
+parts/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# ========== DEPLOYMENT ==========
+# Docker
+Dockerfile
+docker-compose.yml
+.dockerignore
+docker-data/
+
+# Kubernetes
+.kube/
+helm-charts/
+*.yaml
+*.yml
+
+# ========== SECRETS ==========
+secrets/
+keys/
+*.key
+*.pem
+*.crt
+*.cert
+*.p12
+*.pfx
+*.jks
+keystore
+truststore
+
+# ========== RENDER SPECIFIC ==========
+.render.yaml
+.render.yml
+.render-build.log
+render-*
+
+# ========== OUR PROJECT SPECIFIC ==========
+# Training data
+training_data/
+datasets/raw/
+datasets/processed/
+
+# Generated reports
+reports/*.pdf
+reports/*.docx
+reports/*.xlsx
+exports/
+
+# Student photos
+photos/
+student_images/
+
+# Backup files
+backup/
+*.bak
+*.backup
+
+# ========== MISC ==========
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed-cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+cover/
+
+# Translations
+*.mo
+*.pot
+
+# Django stuff:
+*.log
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+
+# Flask stuff:
+instance/
+.webassets-cache
+
+# Scrapy stuff:
+.scrapy
+
+# Sphinx documentation
+docs/_build/
+
+# PyBuilder
+.pybuilder/
+target/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# IPython
+profile_default/
+ipython_config.py
+
+# pyenv
+.python-version
+
+# pipenv
+Pipfile.lock
+
+# poetry
+poetry.lock
+
+# pdm
+.pdm.toml
+
+# PEP 582; used by e.g. github.com/David-OConnor/pyflow
+__pypackages__/
+
+# Celery stuff
+celerybeat-schedule
+celerybeat.pid
+
+# SageMath parsed files
+*.sage.py
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Spyder project settings
+.spyderproject
+.spyproject
+
+# Rope project settings
+.ropeproject
+
+# mkdocs documentation
+/site
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre type checker
+.pyre/
+
+# pytype static type analyzer
+.pytype/
+
+# Cython debug symbols
+cython_debug/
+
+# VS Code specific
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# Local History for Visual Studio Code
+.history/
+
+# Windows Installer files
+*.cab
+*.msi
+*.msm
+*.msp
+
+# Windows shortcuts
+*.lnk
+
+# End of https://www.toptal.com/developers/gitignore/api/python
